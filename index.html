@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拼音変換くん1号</title>
+    <!-- pinyin-proライブラリの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/pinyin-pro@latest/dist/index.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Reibun - 中国語例文アプリ</h1>
+    
+    <!-- 例文入力エリア -->
+    <textarea id="inputText" rows="4" cols="50" placeholder="例文を入力してください"></textarea>
+    <button onclick="addExample()">追加</button>
+    <button onclick="clearExamples()">すべて削除</button>
+
+    <!-- 例文リストの表示エリア -->
+    <h2>例文一覧</h2>
+    <div id="exampleList"></div>
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
